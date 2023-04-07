@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_my_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MedsystemConversor"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".cm_to_mm"
+            android:exported="false" />
+        <activity
+            android:name=".vazao"
+            android:exported="false" />
+        <activity
+            android:name=".ecg"
+            android:exported="false" />
+        <activity
+            android:name=".watts_rms_to_watts"
+            android:exported="false" />
+        <activity
+            android:name=".splash"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            tools:ignore="DuplicateActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+    </application>
+
+</manifest>
