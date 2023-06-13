@@ -1,6 +1,7 @@
 # Medsystem_Conversor
 Aplicativo desenvolvido para conclusão do trabalho de Usina de Projetos Experimentais (UPX 2)
-Conclusão sobre o trabalho:
+
+Conclusão sobre o trabalho:<br>
 No decorrer deste trabalho, foi desenvolvido um aplicativo de conversão de unidades utilizando a plataforma Android Studio. O objetivo principal do projeto era criar uma ferramenta que facilitasse a conversão de unidades utilizadas na calibração de equipamentos médicos, como vazão, cmH2O para mmHg, watts RMS para watts e ECG.
 Para alcançar esse objetivo, foram estabelecidos os seguintes passos: definição do escopo do aplicativo, modelagem do banco de dados, desenvolvimento dos protótipos e implementação das funcionalidades de conversão.
 Durante a modelagem do banco de dados, houve a necessidade de ajustar o modelo conceitual para coletar informações dos usuários, como e-mail e senha, em vez de informações dos equipamentos. Essa modificação foi realizada visando aprimorar a segurança e a usabilidade do aplicativo.
