@@ -1,19 +1,140 @@
-# Medsystem_Conversor
-Aplicativo desenvolvido para conclusão do trabalho de Usina de Projetos Experimentais (UPX 2)
+# Medsystem Conversor
 
-Conclusão sobre o trabalho:<br>
-No decorrer deste trabalho, foi desenvolvido um aplicativo de conversão de unidades utilizando a plataforma Android Studio. O objetivo principal do projeto era criar uma ferramenta que facilitasse a conversão de unidades utilizadas na calibração de equipamentos médicos, como vazão, cmH2O para mmHg, watts RMS para watts e ECG.
+[![Android CI](https://github.com/JPGC02/Medsystem_Conversor/workflows/Android%20CI/badge.svg)](https://github.com/JPGC02/Medsystem_Conversor/actions)
+[![API](https://img.shields.io/badge/API-24%2B-brightgreen.svg)](https://android-arsenal.com/api?level=24)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
-Para alcançar esse objetivo, foram estabelecidos os seguintes passos: definição do escopo do aplicativo, modelagem do banco de dados, desenvolvimento dos protótipos e implementação das funcionalidades de conversão.
+## 📱 Sobre o Projeto
 
-Durante a modelagem do banco de dados, houve a necessidade de ajustar o modelo conceitual para coletar informações dos usuários, como e-mail e senha, em vez de informações dos equipamentos. Essa modificação foi realizada visando aprimorar a segurança e a usabilidade do aplicativo.
+O Medsystem Conversor é um aplicativo Android desenvolvido para facilitar a conversão de unidades utilizadas na calibração de equipamentos médicos. Este projeto foi desenvolvido como parte do trabalho de conclusão da Usina de Projetos Experimentais (UPX 2).
 
-Ao finalizar o desenvolvimento, o aplicativo mostrou-se eficiente e intuitivo, permitindo que os usuários realizassem as conversões de forma simples e rápida. Além disso, o banco de dados foi devidamente estruturado, garantindo a organização e a integridade dos dados coletados.
+### 🎯 Principais Funcionalidades
 
-Como resultado desse trabalho, espera-se proporcionar aos profissionais da área médica uma ferramenta prática e acessível para realizar as conversões de unidades utilizadas na calibração de equipamentos. Isso contribuirá para otimizar o processo de obtenção de resultados precisos e confiáveis.
+- Conversão de Vazão
+- Conversão de cmH2O para mmHg
+- Conversão de Watts RMS para Watts
+- Conversão de unidades ECG
+- Sistema de autenticação seguro
+- Histórico de conversões
+- Modo offline
+- Tema claro/escuro
 
-Em termos de retorno esperado, espera-se que o aplicativo seja bem recebido pelos usuários, oferecendo-lhes uma solução eficiente para suas necessidades de conversão de unidades. Além disso, a utilização do aplicativo pode reduzir erros e facilitar o trabalho dos profissionais, economizando tempo e recursos.
+## 🚀 Tecnologias Utilizadas
 
-No processo de validação do aplicativo, foi realizado um procedimento de testes, onde foram verificados o funcionamento correto das funcionalidades de conversão, a integridade dos dados coletados e a usabilidade do aplicativo como um todo. Os resultados obtidos durante os testes foram satisfatórios, atestando a eficiência e a confiabilidade do aplicativo.
+- **Kotlin** - Linguagem principal
+- **MVVM** - Padrão de arquitetura
+- **Jetpack Components**
+  - Navigation
+  - Room Database
+  - ViewModel
+  - LiveData
+  - DataBinding
+- **Dagger Hilt** - Injeção de dependência
+- **Retrofit** - Requisições HTTP
+- **Coroutines** - Programação assíncrona
+- **Material Design 3** - UI/UX
+- **Unit Tests** - JUnit e Mockito
+- **Security Crypto** - Criptografia de dados
 
-Em suma, este trabalho demonstrou a viabilidade e a utilidade de um aplicativo de conversão de unidades para a área médica, oferecendo uma solução prática e eficiente para profissionais que necessitam realizar conversões de unidades utilizadas na calibração de equipamentos. Através do desenvolvimento do aplicativo e da adequação do banco de dados, foi possível atingir os objetivos propostos, proporcionando uma ferramenta acessível e confiável aos usuários.
+## 📥 Instalação
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/JPGC02/Medsystem_Conversor.git
+```
+
+2. Abra o projeto no Android Studio
+
+3. Configure o arquivo local.properties com suas credenciais:
+```properties
+sdk.dir=YOUR_ANDROID_SDK_PATH
+```
+
+4. Sincronize o projeto com o Gradle
+
+5. Execute o aplicativo
+
+## 🔧 Configuração do Ambiente de Desenvolvimento
+
+### Requisitos
+- Android Studio Hedgehog | 2023.1.1 ou superior
+- JDK 17
+- Android SDK 34
+- Gradle 8.2
+
+### Variáveis de Ambiente
+Configure as seguintes variáveis no seu arquivo `local.properties`:
+```properties
+RELEASE_STORE_FILE=your_keystore_path
+RELEASE_STORE_PASSWORD=your_keystore_password
+RELEASE_KEY_ALIAS=your_key_alias
+RELEASE_KEY_PASSWORD=your_key_password
+```
+
+## 🧪 Testes
+
+### Executando Testes Unitários
+```bash
+./gradlew test
+```
+
+### Executando Testes Instrumentados
+```bash
+./gradlew connectedAndroidTest
+```
+
+## 📊 Arquitetura
+
+O projeto segue a arquitetura MVVM (Model-View-ViewModel) com Clean Architecture:
+
+```
+app/
+├── data/
+│   ├── local/
+│   ├── remote/
+│   └── repository/
+├── di/
+├── domain/
+│   ├── model/
+│   ├── repository/
+│   └── usecase/
+├── presentation/
+│   ├── common/
+│   ├── converter/
+│   ├── history/
+│   └── settings/
+└── util/
+```
+
+## 🔐 Segurança
+
+- Implementação de criptografia para dados sensíveis
+- Proteção contra SQL Injection
+- Validação de entrada de dados
+- Certificados SSL pinning
+- Proteção contra screenshots em telas sensíveis
+
+## 🤝 Contribuição
+
+1. Fork o projeto
+2. Crie sua Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a Branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
+
+## 📝 Licença
+
+Este projeto está licenciado sob a Licença Apache 2.0 - veja o arquivo [LICENSE](LICENSE) para detalhes.
+
+## 📬 Contato
+
+João Paulo - [@_jpgc_](https://www.instagram.com/_jpgc_/)
+
+Link do Projeto: [https://github.com/JPGC02/Medsystem_Conversor](https://github.com/JPGC02/Medsystem_Conversor)
+
+## 🙏 Agradecimentos
+
+- [Android Jetpack](https://developer.android.com/jetpack)
+- [Material Design](https://material.io/design)
+- [Kotlin](https://kotlinlang.org/)
+- [Stack Overflow](https://stackoverflow.com/)
